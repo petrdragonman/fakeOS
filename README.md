@@ -1,4 +1,4 @@
-# Title FakeOS
+# FakeOS
 
 ## Demo & Snippets
 
