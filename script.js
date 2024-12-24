@@ -1,3 +1,4 @@
+import { updateClock } from "./scripts/Maths/getCurrentTime.js";
 
 
 
@@ -35,3 +36,8 @@ const updateWeatherModal = (data) => {
     temperatureEl.innerText = data.current.temp_c;
     descriptionEl.innerText = data.current.condition.text;
 };
+
+const isAppOn = 0;
+while(isAppOn) {
+    await updateClock("time");
+}
