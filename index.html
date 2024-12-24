@@ -8,105 +8,107 @@
     <script type="module" src="./script.js" defer></script>
 </head>
 <body>
-    <h1>FakeOS</h1>
-    <header class="toolbar">
-        <section class="toolbar__container-start">
-            <article class="toolbar__container-start__coverage">
-                <img class="toolbar__container__item" src="./assets/toolbar/signal.svg" alt="picture of signal">
-                <span class="toolbar__container__item">AT&T</span>
-            </article>
-            <img class="toolbar__container__item" src="./assets/toolbar/wifi.svg" alt="picture of wifi">
+    <section class="theApp">
+        <h1>FakeOS</h1>
+        <header class="toolbar">
+            <section class="toolbar__container-start">
+                <article class="toolbar__container-start__coverage">
+                    <img class="toolbar__container__item" src="./assets/toolbar/signal.svg" alt="picture of signal">
+                    <span class="toolbar__container__item">AT&T</span>
+                </article>
+                <img class="toolbar__container__item" src="./assets/toolbar/wifi.svg" alt="picture of wifi">
+            </section>
+            <section class="toolbar__container-center">
+                <span id="time" class="toolbar__container__item"></span>
+            </section>
+            <section class="toolbar__container-end">
+                <img class="toolbar__container__item" src="./assets/toolbar/bluetooth.svg" alt="picture of bluetooth">
+                <img class="toolbar__container__item" src="./assets/toolbar/battery.svg" alt="picture of battery">
+            </section>
+        </header>
+        <main class="main-container">
+            <section class="main-container__apps">
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/sms.png" alt="icon of sms">
+                    <span>Text</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/calendar.jpg" alt="icon of calendar">
+                    <span>Calendar</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/photos.webp" alt="icon of photos">
+                    <span>Photos</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/camera.png" alt="icon of camera">
+                    <span>Camera</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/youtube.webp" alt="icon of youtube">
+                    <span>YouTube</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/stocks.svg" alt="icon of stocks">
+                    <span>Stocks</span>
+                </article> 
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/maps.webp" alt="icon of maps">
+                    <span>Maps</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img id="weatherBtn" src="./assets/icons/weather.webp" alt="icon of weather">
+                    <span>Weather</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/clock.webp" alt="icon of clock">
+                    <span>Clock</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/calculator.webp" alt="icon of calculator">
+                    <span>Calculator</span>
+                </article>
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/notes.webp" alt="icon of notes">
+                    <span>Notes</span>
+                </article> 
+                <article class="main-container__apps__item">
+                    <img src="./assets/icons/settings.webp" alt="icon of settings">
+                    <span>Settings</span>
+                </article> 
+            </section>
+        </main>
+        <section class="dock">
+            <section class="dock__container">
+                <article class="dock__container__item">
+                    <img src="./assets/dock/phone.svg" alt="icon of phone">
+                </article>
+                <article class="dock__container__item">
+                    <img src="./assets//dock/mail.svg" alt="icon of mail">
+                </article>
+                <article class="dock__container__item">
+                    <img src="./assets/dock/safari.webp" alt="icon of safari">
+                </article>
+                <article class="dock__container__item">
+                    <img src="./assets/dock/iPod.svg" alt="icon of iPod">
+                </article>
+            </section>
         </section>
-        <section class="toolbar__container-center">
-            <span id="time" class="toolbar__container__item"></span>
-        </section>
-        <section class="toolbar__container-end">
-            <img class="toolbar__container__item" src="./assets/toolbar/bluetooth.svg" alt="picture of bluetooth">
-            <img class="toolbar__container__item" src="./assets/toolbar/battery.svg" alt="picture of battery">
-        </section>
-    </header>
-    <main class="main-container">
-        <section class="main-container__apps">
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/sms.png" alt="icon of sms">
-                <span>Text</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/calendar.jpg" alt="icon of calendar">
-                <span>Calendar</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/photos.webp" alt="icon of photos">
-                <span>Photos</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/camera.png" alt="icon of camera">
-                <span>Camera</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/youtube.webp" alt="icon of youtube">
-                <span>YouTube</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/stocks.svg" alt="icon of stocks">
-                <span>Stocks</span>
-            </article> 
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/maps.webp" alt="icon of maps">
-                <span>Maps</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img id="weatherBtn" src="./assets/icons/weather.webp" alt="icon of weather">
-                <span>Weather</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/clock.webp" alt="icon of clock">
-                <span>Clock</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/calculator.webp" alt="icon of calculator">
-                <span>Calculator</span>
-            </article>
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/notes.webp" alt="icon of notes">
-                <span>Notes</span>
-            </article> 
-            <article class="main-container__apps__item">
-                <img src="./assets/icons/settings.webp" alt="icon of settings">
-                <span>Settings</span>
-            </article> 
-        </section>
-    </main>
-    <section class="dock">
-        <section class="dock__container">
-            <article class="dock__container__item">
-                <img src="./assets/dock/phone.svg" alt="icon of phone">
-            </article>
-            <article class="dock__container__item">
-                <img src="./assets//dock/mail.svg" alt="icon of mail">
-            </article>
-            <article class="dock__container__item">
-                <img src="./assets/dock/safari.webp" alt="icon of safari">
-            </article>
-            <article class="dock__container__item">
-                <img src="./assets/dock/iPod.svg" alt="icon of iPod">
-            </article>
-        </section>
-    </section>
-    <footer class="dock-text">
-        <p class="dock-text__item">Phone</p>
-        <p class="dock-text__item">Mail</p>
-        <p class="dock-text__item">Safari</p>
-        <p class="dock-text__item">iPod</p>
-    </footer>
+        <footer class="dock-text">
+            <p class="dock-text__item">Phone</p>
+            <p class="dock-text__item">Mail</p>
+            <p class="dock-text__item">Safari</p>
+            <p class="dock-text__item">iPod</p>
+        </footer>
 
-    <dialog class="dialog">
-        <h2 class="dialog__heading">My Location</h2>
-        <button class="dialog__close-button" id="close-modal">x</button>
-        <div class="dialog__content">
-            <span class="location">GLEBE</span>
-            <span class="temp">19°</span>
-        </div>
-    </dialog>
+        <dialog class="dialog">
+            <h2 class="dialog__heading">My Location</h2>
+            <button class="dialog__close-button" id="close-modal">x</button>
+            <div class="dialog__content">
+                <span class="location">GLEBE</span>
+                <span class="temp">19°</span>
+            </div>
+        </dialog>
+    </section>
 </body>
 </html>
