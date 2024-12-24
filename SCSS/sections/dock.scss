@@ -1,0 +1,33 @@
+@use '../partials/colors' as c;
+@use "../partials/mixins";
+
+
+.dock {
+    background-image: URL("./assets/pattern3.jpg");
+    background-repeat: repeat;
+    padding: 10px 20px;
+    &__container {
+        @include mixins.flex(row, space-between);
+        &__item {
+            @include mixins.flex-center();
+        }
+        img {
+            width: 96px;
+        }
+    }
+}
+
+.dock-text {
+    background-color: c.$dock-text-bkgrd;
+    color: c.$text-prinary;
+    margin: 0px;
+    padding: 0px;
+    @include mixins.flex(row, space-around);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    &__item {
+        font-size: 0.9em;
+        margin: 0px;
+        padding: 0px;
+    }
+}

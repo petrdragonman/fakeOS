@@ -1,0 +1,40 @@
+@use '../partials/colors' as c;
+@use '../partials/mixins';
+
+
+.toolbar {
+    @include mixins.flex(row,space-between);
+    background-color: c.$toolbar-bkgrd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1px 6px;
+    &__container-start {
+        font-size: 1.2em;
+        @include mixins.flex(row, flex-start);
+        align-items: center;
+        gap: 15px;
+        &__coverage {
+            @include mixins.flex(row, flex-start);
+            align-items: center;
+            gap: 4px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__container-center {
+        @include mixins.flex(row, center);
+        font-size: 1.3em;
+    }
+    &__container-end {
+        @include mixins.flex(row, flex-end);
+        align-items: center;
+        gap: 10px;
+    }
+    img {
+        height: 20px;
+    }
+    span {
+        color: c.$text-secondary;
+        font-size: 1.1em;
+    }
+}

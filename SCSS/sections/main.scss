@@ -1,0 +1,27 @@
+@use '../partials/colors' as c;
+@use "../partials/mixins";
+
+.main-container {
+    background-color: c.$main-body-bkgrd;
+    height: 50vh;
+    padding: 25px;
+    display: flex;
+    @include mixins.flex(column, space-between);
+    gap: 50px;
+    &__apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        &__item {
+            @include mixins.flex-center(column);
+            gap: 5px;
+        }
+        img {
+            width: 96px;
+        }
+        span {
+            color: c.$text-prinary;
+            font-size: 1.1em;
+        }
+    }
+}

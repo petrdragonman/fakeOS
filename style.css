@@ -1,10 +1,6 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 98vw;
-}
-
 .toolbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   background-color: #0D1419;
   border-top-left-radius: 10px;
@@ -14,12 +10,14 @@ body {
 .toolbar__container-start {
   font-size: 1.2em;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
 }
 .toolbar__container-start__coverage {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 4px;
@@ -28,11 +26,13 @@ body {
 }
 .toolbar__container-center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   font-size: 1.3em;
 }
 .toolbar__container-end {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
@@ -49,6 +49,7 @@ body {
   background-color: black;
   height: 50vh;
   padding: 25px;
+  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,6 +110,14 @@ body {
   font-size: 0.9em;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 525px;
+}
+body h1 {
+  text-align: center;
 }
 
 .dialog {
