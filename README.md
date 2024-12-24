@@ -50,7 +50,10 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## Design Goals / Approach
 
--   
+-   structured the layout of the html and the scss
+-   implemented the modal for the weather app
+-   fetched the data from API
+-   implemented current time feature
 
 ## Features
 
@@ -65,11 +68,12 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## Known issues
 
--   
+-   not fully functional, only current tiem and weather app fetching data from external API
+-   API: https://www.weatherapi.com
 
 ## Future Goals
 
--   
+-   none at present
 
 ## Change logs
 
@@ -77,7 +81,8 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## What did you struggle with?
 
--   
+-   suprisingly the biggest problem was the index.html layout and keeping the width of the body and the modal to stay withing the required dimensions.
+-   also bit of struggle was to get the current time going on the loop without interfiring with the modal
 
 ## Licensing Details
 
@@ -85,5 +90,5 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## Further details, related projects, reimplementations
 
--   This is a school project
+-   This is a school challenge project
 

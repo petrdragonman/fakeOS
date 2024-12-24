@@ -17,7 +17,7 @@ closeWeatherApp.addEventListener('click', () => {
 });
 
 // if true -> 1 the continues loop for the current time feature
-const isAppOn = 0;
+const isAppOn = 1;
 while(isAppOn) {
     await updateClock("time");
 }

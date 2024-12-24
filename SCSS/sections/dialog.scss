@@ -4,12 +4,10 @@
 .dialog {
     position: absolute;
     top: -656px;
-    right: 0.1em;
     border: none;
     background-color: c.$modal-bkgrd;
     border-radius: 5px;
-    min-width: 90%;
-    //max-width: 520px;
+    min-width: 480px;
     opacity: 0.95;
     &__heading {
         margin-top: 60px;

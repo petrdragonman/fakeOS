@@ -2,17 +2,16 @@
 @use './SCSS/sections/main.scss';
 @use './SCSS/sections/dock.scss';
 @use './SCSS/sections/dialog.scss';
+@use './SCSS/partials/mixins';
+@use './SCSS/partials/variables';
 
 body {
+    @include mixins.flex-center(column);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    width: 525px;
-    h1 {
+    .appTitle {
         text-align: center;
     }
-    // .theApp {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    .theApp {
+        width: variables.$app-width;
+    }
 }
