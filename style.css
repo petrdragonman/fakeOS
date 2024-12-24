@@ -112,18 +112,10 @@
   padding: 0px;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 525px;
-}
-body h1 {
-  text-align: center;
-}
-
 .dialog {
   position: absolute;
-  top: -700px;
-  right: -0.2em;
+  top: -656px;
+  right: 0.1em;
   border: none;
   background-color: rgb(113, 192, 238);
   border-radius: 5px;
@@ -131,6 +123,7 @@ body h1 {
   opacity: 0.95;
 }
 .dialog__heading {
+  margin-top: 60px;
   color: white;
   font-size: 2.2em;
   font-weight: lighter;
@@ -153,8 +146,19 @@ body h1 {
 .dialog__content .location {
   font-size: 1.1em;
 }
-.dialog__content .temp {
+.dialog__content .temperature {
   font-size: 8em;
+}
+.dialog__content .description {
+  font-size: 1.3em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 525px;
+}
+body h1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
