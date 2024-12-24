@@ -1,3 +1,151 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 98vw;
+}
 
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0D1419;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1px 6px;
+}
+.toolbar__container-start {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.toolbar__container-start__coverage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+.toolbar__container-center {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}
+.toolbar__container-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.toolbar img {
+  height: 20px;
+}
+.toolbar span {
+  color: #C3C4C9;
+  font-size: 1.1em;
+}
+
+.main-container {
+  background-color: black;
+  height: 50vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.main-container__apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main-container__apps__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.main-container__apps img {
+  width: 96px;
+}
+.main-container__apps span {
+  color: white;
+  font-size: 1.1em;
+}
+
+.dock {
+  background-image: URL("./assets/pattern3.jpg");
+  background-repeat: repeat;
+  padding: 10px 20px;
+}
+.dock__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dock__container__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dock__container img {
+  width: 96px;
+}
+
+.dock-text {
+  background-color: #85888D;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dock-text__item {
+  font-size: 0.9em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dialog {
+  position: absolute;
+  top: -700px;
+  right: -0.2em;
+  border: none;
+  background-color: rgb(113, 192, 238);
+  border-radius: 5px;
+  min-width: 90%;
+  opacity: 0.95;
+}
+.dialog__heading {
+  color: white;
+  font-size: 2.2em;
+  font-weight: lighter;
+  text-align: center;
+}
+.dialog__close-button {
+  position: absolute;
+  top: 0.6em;
+  border: 0.1 solid #CF4D42;
+  background-color: #EC6B60;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+.dialog__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.dialog__content .location {
+  font-size: 1.1em;
+}
+.dialog__content .temp {
+  font-size: 8em;
+}
 
 /*# sourceMappingURL=style.css.map */
