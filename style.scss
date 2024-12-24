@@ -1,6 +1,7 @@
 @use './SCSS/sections/toolbar.scss';
 @use './SCSS/sections/main.scss';
 @use './SCSS/sections/dock.scss';
+@use './SCSS/sections/dialog.scss';
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -14,42 +15,4 @@ body {
     //     justify-content: center;
     //     align-items: center;
     // }
-}
-
-.dialog {
-    position: absolute;
-    top: -700px;
-    right: -0.2em;
-    border: none;
-    background-color: rgb(113, 192, 238);
-    border-radius: 5px;
-    min-width: 90%;
-    opacity: 0.95;
-    &__heading {
-        color: white;
-        font-size: 2.2em;
-        font-weight: lighter;
-        text-align: center;
-    }
-    &__close-button {
-        position: absolute;
-        top: 0.6em;
-        border: 0.1 solid #CF4D42;
-        background-color: #EC6B60;
-        border-radius: 50%;
-        font-size: 0.8em;
-    }
-    &__content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: white;
-        .location {
-            font-size: 1.1em;
-        }
-        .temp {
-            // degree symbl shift + alt + 8
-            font-size: 8em;
-        }
-    }
 }
