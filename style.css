@@ -115,11 +115,10 @@
 .dialog {
   position: absolute;
   top: -656px;
-  right: 0.1em;
   border: none;
   background-color: rgb(113, 192, 238);
   border-radius: 5px;
-  min-width: 90%;
+  min-width: 480px;
   opacity: 0.95;
 }
 .dialog__heading {
@@ -154,11 +153,17 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 525px;
 }
-body h1 {
+body .appTitle {
   text-align: center;
+}
+body .theApp {
+  width: 524px;
 }
 
 /*# sourceMappingURL=style.css.map */
