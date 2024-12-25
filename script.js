@@ -1,6 +1,7 @@
 import { updateClock } from "./scripts/DOM/updateClock.js";
 import { getWeatherData } from "./scripts/API/getWeatherData.js";
 import { updateWeatherModal } from "./scripts/DOM/updateWeatherModal.js";
+import { loadingInfo } from "./scripts/DOM/loading.js";
 
 
 const weatherApp = document.getElementById("weatherBtn");
@@ -9,6 +10,8 @@ const closeWeatherApp = document.querySelector("#close-modal");
 
 weatherApp.addEventListener('click', async () => {
     weatherDialog.showModal();
+    // passing id of the element to display message "loading...."
+    loadingInfo("loc");
     updateWeatherModal(await getWeatherData());
 });
 
