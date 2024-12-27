@@ -57,14 +57,9 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## Features
 
--  SPA (Single Page Application)
--  Desktop has a wallpaper that fits the viewport
--  Sectable icons
--  Selecting an icon will open an "app", creating a modal to display some content
--  Able to close an app
--  Selectable menu
--  Selecting the menu will display a list of text and icons
--  Displays current time
+-   SPA (Single Page Application)
+-   Weather app displays current weather data 
+-   Displays current time
 
 ## Known issues
 
@@ -77,12 +72,13 @@ What are Pure Functions and Side Effects in JavaScript?
 
 ## Change logs
 
--   From 19.12.2024 - 06.01.2025
+-   From 19.12.2024 - 27.12.2024
 
 ## What did you struggle with?
 
--   suprisingly the biggest problem was the index.html layout and keeping the width of the body and the modal to stay withing the required dimensions.
+-   suprisingly the biggest problem was the index.html layout and keeping the width of the body and the modal to stay withing the  required dimensions.
 -   also bit of struggle was to get the current time going on the loop without interfiring with the modal
+-   had a git merge problem in the middle of the project flow after discovering modal feature stopped working
 
 ## Licensing Details
 
