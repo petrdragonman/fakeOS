@@ -1,0 +1,17 @@
+@use './SCSS/sections/toolbar.scss';
+@use './SCSS/sections/main.scss';
+@use './SCSS/sections/dock.scss';
+@use './SCSS/sections/dialog.scss';
+@use './SCSS/partials/mixins';
+@use './SCSS/partials/variables';
+
+body {
+    @include mixins.flex-center(column);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    .appTitle {
+        text-align: center;
+    }
+    .theApp {
+        width: variables.$app-width;
+    }
+}

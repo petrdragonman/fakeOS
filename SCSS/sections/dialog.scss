@@ -1,0 +1,43 @@
+@use '../partials/colors' as c;
+
+
+.dialog {
+    position: absolute;
+    top: -460px;
+    border: none;
+    background-image: url("../../assets/weather-bkgrd.jpg");
+    border-radius: 5px;
+    min-width: 480px;
+    opacity: 0.95;
+    &__heading {
+        margin-top: 140px;
+        color: c.$text-prinary;
+        font-size: 2.2em;
+        font-weight: lighter;
+        text-align: center;
+    }
+    &__close-button {
+        position: absolute;
+        top: 0.6em;
+        border: 0.1 solid #CF4D42;
+        background-color: #EC6B60;
+        border-radius: 50%;
+        font-size: 0.8em;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        .location {
+            font-size: 1.1em;
+        }
+        .temperature {
+            // degree symbl shift + alt + 8
+            font-size: 8em;
+        }
+        .description {
+            font-size: 1.3em;
+        }
+    }
+}
